@@ -31,23 +31,9 @@ async function handleAnswer() {
   const spinner = createSpinner("Processing...").start()
   await sleep()
   spinner.success()
-
-  //   score += optionScore
 }
 
 // DM THEME INSTALLER
-
-// 1.WELCOME
-
-// - What’s the wp local theme’s name ?
-// store variable to change folder name
-
-// What is the proxy? Eg dmtheme.local
-// store proxy variable
-
-// Successfully downloaded
-
-// Run ‘code .’ Or ‘npm run build’ to start server
 
 // 1. Welcome a new user
 async function welcome() {
@@ -156,15 +142,25 @@ async function readyDownload() {
         }
 
         // download git repo
+
         // change folder name to variable
+
         // go to webpack.config.js ammend proxy to variable
-        // cd into folder
 
         // npm install
+
+        // spawn new shell in new directory
+        // https://syntaxfix.com/question/12443/change-working-directory-in-my-current-shell-context-when-running-node-script
       } else {
         return readyDownload()
       }
     })
+}
+
+async function completedItMate() {
+  // Successfully downloaded
+  // Run ‘code .’
+  // ‘npm run build’ to start watch files
 }
 
 console.clear()
@@ -172,3 +168,4 @@ await welcome()
 await disclaimer()
 await StoreVariables()
 await readyDownload()
+await completedItMate()
