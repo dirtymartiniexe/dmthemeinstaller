@@ -2,6 +2,7 @@
   "name": "dmthemeinstaller",
   "version": "1.0.0",
   "description": "Simple package to download and install the latest DMTHEME in your wp local folder",
+  "homepage": "https://github.com/dirtymartiniexe/dmthemeinstaller.git",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -9,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dirtymartiniexe/dmthemeinstaller.git"
+    "url": "https://github.com/dirtymartiniexe/dmthemeinstaller.git"
   },
   "author": "Maxwell Kirwin",
   "license": "ISC",
@@ -17,9 +18,9 @@
   "dependencies": {
     "boxen": "^6.2.1",
     "chalk": "^4.1.2",
-    "download-git-repo": "^3.0.2",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.0",
-    "nanospinner": "^1.0.0"
+    "nanospinner": "^1.0.0",
+    "nodegit": "^0.27.0"
   }
 }
